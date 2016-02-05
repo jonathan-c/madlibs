@@ -1,0 +1,56 @@
+Searching 4 files for "heart"
+
+/Users/Castillo/Desktop/GA-JS/02/madlib with loops/index.html:
+   25    <div class="display-startup">
+   26      <div id="startup"></div>
+   27:     <span class="favorite-button visibility-hidden"><img class="heart" id="save" src="./images/heart.png"></span>
+   28      <div id="message"></div>
+   29      <div id="error-message"></div>
+
+/Users/Castillo/Desktop/GA-JS/02/madlib with loops/css/style.css:
+  106  }
+  107  
+  108: .heart {
+  109    width: 25px;
+  110  }
+
+3 matches across 2 files
+
+
+Searching 4 files for "message"
+
+/Users/Castillo/Desktop/GA-JS/02/madlib with loops/index.html:
+   26      <div id="startup"></div>
+   27      <span class="favorite-button visibility-hidden"><img class="heart-image" id="save" src="./images/heart.png"></span>
+   28:     <div id="success-message"></div>
+   29:     <div id="error-message"></div>
+   30  
+   31    </div>
+
+/Users/Castillo/Desktop/GA-JS/02/madlib with loops/css/style.css:
+  110  }
+  111  
+  112: #success-message {
+  113    display: inline-block;
+  114    position: absolute;
+  ...
+  118  }
+  119  
+  120: #error-message {
+  121    display: inline-block;
+  122    position: absolute;
+
+/Users/Castillo/Desktop/GA-JS/02/madlib with loops/js/madlib-console.js:
+   17  	var found = $.inArray(startup, favorites) > -1;
+   18  	if(found) {
+   19: 		$("#error-message").text("Startup has already been favorited!").fadeIn().delay(750).fadeOut();
+   20  	}
+   21  	else {
+   ..
+   29  		}
+   30  		$("#counter").text(favorites.length+" favorites");
+   31: 		$("#success-message").text("Favorited!").fadeIn().delay(750).fadeOut();
+   32  	}
+   33  };
+
+6 matches across 3 files

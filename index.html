@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mad Lib</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Your description goes here">
+  <meta name="keywords" content="one, two, three">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+  <a id="create" class="button">
+      <span >Create New Startup</span>
+  </a>
+  <br/>
+
+  <div class="display-startup">
+    <div id="startup"></div>
+    <span class="favorite-button visibility-hidden"><img class="heart-image" id="save" src="./images/heart.png"></span>
+    <div id="success-message"></div>
+    <div id="error-message"></div>
+
+  </div>
+
+  <div id="favorites" style="display: hidden;">
+    <button id="show-hide-favorites">Hide Favorites (0)</button>
+    <ol id="favorites-list" class="hidden">
+    </ol>
+  </div>
+
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <script src="js/madlib-console.js"></script>
+
+</body>
+
+</html>
